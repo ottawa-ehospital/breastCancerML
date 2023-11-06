@@ -11,7 +11,8 @@ CORS(app, resources={r"/*": {"origins": ["http://localhost",
                                           "http://www.e-hospital.ca/gastroImagePrediction",
                                           "http://www.e-hospital.ca",
                                           "http://localhost:5000",
-                                          "http://localhost:3000"]}})
+                                          "http://localhost:3000",
+                                          "https://e-react-frontend-55dbf7a5897e.herokuapp.com"]}})
 model = pickle.load(open('model.pkl', 'rb'))
 scaler = pickle.load(open('scaler.pkl', 'rb'))
 
